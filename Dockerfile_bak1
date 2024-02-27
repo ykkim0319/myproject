@@ -1,0 +1,4 @@
+FROM docker.io/library/openjdk:8
+ADD worker3.war app3.war
+ENV JAVA_OPTS=""
+ENTRYPOINT ["java", "-jar", "/app3.war"]
